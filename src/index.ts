@@ -1,5 +1,5 @@
 import { Metadata, Step, ParseResult, ShoppingList, ShoppingListItem, ImageURLOptions } from './types';
-import { tokens, shoppingListToken } from './tokens';
+import { tokens, shoppingListToken, comment, blockComment } from './tokens';
 
 function parseQuantity(quantity?: string, defaultText?: string): string | number | undefined {
     if (!quantity || quantity.trim() == '') {
@@ -75,6 +75,11 @@ export function parse(source: string): ParseResult {
     const metadata: Metadata = {};
     const steps: Array<Step> = [];
     const shoppingList: ShoppingList = {};
+
+    // Comments
+    source = source
+        .replace(comment, '')
+        .replace(blockComment, ' ');
 
     // Parse shopping lists
     for (let match of source.matchAll(shoppingListToken)) {
