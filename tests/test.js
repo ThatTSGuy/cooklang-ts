@@ -65,11 +65,20 @@ async function runTests(yamlFile) {
     console.log(' - Failed: ' + (tests.length - passed));
     console.log(' -  Total: ' + tests.length)
     console.log('\n');
+
+    return {
+        passed,
+        total: tests.length,
+    }
 }
 
 (async () => {
-    runTests('canonical.yaml');
-    runTests('custom.yaml');
+    const canonical = await runTests('canonical.yaml');
+    const custom = await runTests('custom.yaml');
+
+    const failed = (canonical.total + custom.total - canonical.passed - custom.passed);
+
+    if (failed > 0) assert.fail(`Failed ${failed} tests`);
 })();
 
 function deepEqual(a, b) {
