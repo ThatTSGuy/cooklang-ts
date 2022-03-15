@@ -30,12 +30,12 @@ function replaceUndefinedWithString(item) {
     }
 }
 
-(async () => {
-    const testsFile = await fs.readFile('./tests/canonical.yaml', 'utf-8');
+async function runTests(yamlFile) {
+    const testsFile = await fs.readFile('./tests/' + yamlFile, 'utf-8');
 
     const tests = Object.entries(YAML.parse(testsFile).tests);
 
-    console.log(`Running tests\n`);
+    console.log(`Running tests: ${yamlFile}\n`);
 
     let passed = 0;
 
@@ -60,10 +60,16 @@ function replaceUndefinedWithString(item) {
         console.log('');
     }
 
-    console.log('Tests finished:');
+    console.log(`Tests (${yamlFile}) finished:`);
     console.log(' - Passed: ' + passed);
     console.log(' - Failed: ' + (tests.length - passed));
     console.log(' -  Total: ' + tests.length)
+    console.log('\n');
+}
+
+(async () => {
+    runTests('canonical.yaml');
+    runTests('custom.yaml');
 })();
 
 function deepEqual(a, b) {
