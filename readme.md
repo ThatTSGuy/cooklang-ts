@@ -1,5 +1,4 @@
 # Cooklang-TS
----
 
 Cooklang-TS is a TypeScript library for parsing and manipulating [Cooklang](https://cooklang.org/) recipes.
 
@@ -10,7 +9,6 @@ Cooklang-TS is a TypeScript library for parsing and manipulating [Cooklang](http
 - [ ] Markdown extension
 
 ## Usage
----
 ```typescript
 import { Recipe, parse, getImageURL } from 'cooklang-ts';
 
@@ -41,12 +39,10 @@ console.log(getImageURL('Mixed Berry Smoothie', {
 ```
 
 ## Documentation
----
 
 Documentation can be found [here](https://theonlygoodone.github.io/cooklang-ts/) along with the [Cooklang Specification](https://cooklang.org/docs/spec/).
 
 ## Testing
----
 
 Tests are as found in https://github.com/cooklang/spec/blob/main/tests/canonical.yaml.
 ```
