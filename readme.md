@@ -1,5 +1,7 @@
 # Cooklang-TS
 
+![cooklang-ts logo](assets/logo.svg)
+
 [![Tests](https://github.com/TheOnlyGoodOne/cooklang-ts/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/TheOnlyGoodOne/cooklang-ts/actions/workflows/tests.yml)
 
 Cooklang-TS is a TypeScript library for parsing and manipulating [Cooklang](https://cooklang.org/) recipes.
