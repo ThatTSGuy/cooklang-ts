@@ -7,7 +7,7 @@
     "build": "tsc",
     "watch": "ts-node-dev --respawn --clear --rs src/index.ts",
     "test": "node tests/test.js",
-    "docs": "typedoc --out docs src/index.ts"
+    "docs": "typedoc --readme assets/readme-doc.md --out docs src/index.ts"
   },
   "author": "Jack Temko",
   "license": "ISC",
