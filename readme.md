@@ -2,9 +2,9 @@
 
 ![cooklang-ts logo](assets/logo.svg)
 
-[![Tests](https://github.com/TheOnlyGoodOne/cooklang-ts/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/TheOnlyGoodOne/cooklang-ts/actions/workflows/tests.yml)
-
 Cooklang-TS is a TypeScript library for parsing and manipulating [Cooklang](https://cooklang.org/) recipes.
+
+[![Tests](https://github.com/ThatTSGuy/cooklang-ts/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ThatTSGuy/cooklang-ts/actions/workflows/tests.yml)
 
 ### To-Do
 - [x] Pass all tests
@@ -45,7 +45,7 @@ console.log(getImageURL('Mixed Berry Smoothie', {
 
 ## Documentation
 
-Documentation can be found [here](https://theonlygoodone.github.io/cooklang-ts/) along with the [Cooklang Specification](https://cooklang.org/docs/spec/).
+Documentation can be found [here](https://thattsguy.github.io/cooklang-ts/) along with the [Cooklang Specification](https://cooklang.org/docs/spec/).
 
 ## Testing
 
