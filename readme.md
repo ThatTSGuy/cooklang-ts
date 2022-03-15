@@ -4,7 +4,8 @@ Cooklang-TS is a TypeScript library for parsing and manipulating [Cooklang](http
 
 ### To-Do
 - [x] Pass all tests
-- [ ] Add tag support
+- [ ] Add recipe scaling support
+- [ ] Add recipe tags support
 - [ ] Add extension support
 - [ ] Markdown extension
 
