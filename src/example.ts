@@ -1,4 +1,4 @@
-import { Recipe, parse, getImageURL } from ".";
+import { Recipe, Parser, getImageURL } from ".";
 
 const source = `
 >> source: https://www.dinneratthezoo.com/wprm_print/6796
@@ -12,7 +12,7 @@ Taste and add @honey{} if desired. Pour into two glasses and garnish with fresh 
 
 const recipe = new Recipe(source);
 
-console.log(parse(source).metadata);
+console.log(new Parser().parse(source).metadata);
 // {
 //     source: 'https://www.dinneratthezoo.com/wprm_print/6796',
 //     'total time': '6 minutes',

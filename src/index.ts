@@ -98,3 +98,4 @@ export class Recipe {
 }
 
 export * from './types';
+export { Parser };
