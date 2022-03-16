@@ -3,9 +3,11 @@
 ![cooklang-ts logo](assets/logo.svg#gh-light-mode-only)
 ![cooklang-ts logo](assets/logo_dark.svg#gh-dark-mode-only)
 
-Cooklang-TS is a TypeScript library for parsing and manipulating [Cooklang](https://cooklang.org/) recipes.
-
-[![Tests](https://github.com/ThatTSGuy/cooklang-ts/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ThatTSGuy/cooklang-ts/actions/workflows/tests.yml)
+<div align="center">
+    Cooklang-TS is a TypeScript library for parsing and manipulating <a href="https://cooklang.org/">Cooklang</a> recipes.
+    <br><br>
+    <a href="https://github.com/ThatTSGuy/cooklang-ts/actions/workflows/tests.yml"><img src="https://github.com/ThatTSGuy/cooklang-ts/actions/workflows/tests.yml/badge.svg?branch=main"></a>
+</div>
 
 ### To-Do
 - [x] Pass all tests
