@@ -15,7 +15,7 @@ Cooklang-TS is a TypeScript library for parsing and manipulating [Cooklang](http
 
 ## Usage
 ```typescript
-import { Recipe, parse, getImageURL } from 'cooklang-ts';
+import { Recipe, Parser, getImageURL } from 'cooklang-ts';
 
 const source = `
 >> source: https://www.dinneratthezoo.com/wprm_print/6796
@@ -29,7 +29,7 @@ Taste and add @honey{} if desired. Pour into two glasses and garnish with fresh 
 
 const recipe = new Recipe(source);
 
-console.log(parse(source).metadata);
+console.log(new Parser().parse(source).metadata);
 // {
 //     source: 'https://www.dinneratthezoo.com/wprm_print/6796',
 //     'total time': '6 minutes',
