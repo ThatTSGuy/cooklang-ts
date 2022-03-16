@@ -1,6 +1,7 @@
 # Cooklang-TS
 
-![cooklang-ts logo](assets/logo.svg)
+![cooklang-ts logo](assets/logo.svg#gh-light-mode-only)
+![cooklang-ts logo](assets/logo_dark.svg#gh-dark-mode-only)
 
 Cooklang-TS is a TypeScript library for parsing and manipulating [Cooklang](https://cooklang.org/) recipes.
 
